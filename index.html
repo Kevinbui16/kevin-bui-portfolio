@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kevin Bui — AI Engineer</title>
+<meta name="description" content="Kevin Bui — AI Engineer. Computer vision, machine learning and applied AI, built cinematic." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__mark">KB</div>
+  <div class="preloader__status"><span id="preloaderLabel">CALIBRATING ORBIT</span><span id="preloaderPct">0%</span></div>
+  <div class="preloader__bar"><div class="preloader__fill" id="preloaderFill"></div></div>
+</div>
+
+<!-- ══════════ GRAIN ══════════ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav">
+  <a class="nav__mark" href="#top">KB<span class="nav__dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ══════════ ACT I · HERO ORBIT (scroll-scrubbed frame sequence) ══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__pin">
+      <canvas class="hero__canvas" id="heroCanvas" aria-label="Cinematic orbit of Kevin Bui"></canvas>
+      <div class="hero__vignette"></div>
+
+      <div class="hero__type">
+        <p class="hero__eyebrow mono" id="heroEyebrow">PORTFOLIO — MELBOURNE, AUS</p>
+        <h1 class="hero__title" id="heroTitle" aria-label="Kevin Bui">
+          <span class="hero__word" data-word="KEVIN"></span>
+          <span class="hero__word hero__word--accent" data-word="BUI"></span>
+        </h1>
+        <p class="hero__subtitle" id="heroSubtitle">AI&nbsp;Engineer</p>
+      </div>
+
+      <div class="hero__hint mono" id="heroHint">
+        <span>SCROLL TO ORBIT</span>
+        <span class="hero__hint-line"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ STATS STRIP ══════════ -->
+  <section class="stats" id="stats">
+    <div class="stats__rail">
+      <div class="stat" data-count="10"    data-suffix="+"><span class="stat__num mono">0</span><span class="stat__label">AI Projects Built</span></div>
+      <div class="stat" data-count="98"    data-suffix="%"><span class="stat__num mono">0</span><span class="stat__label">Model Accuracy</span></div>
+      <div class="stat" data-count="4"     data-suffix="×"><span class="stat__num mono">0</span><span class="stat__label">National AI Awards</span></div>
+      <div class="stat" data-count="450"   data-suffix="+"><span class="stat__num mono">0</span><span class="stat__label">End Users Impacted</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ MANIFESTO ══════════ -->
+  <section class="manifesto" id="about">
+    <p class="section-eyebrow mono" data-reveal>THE ANALYST BEHIND THE NUMBERS</p>
+    <h2 class="manifesto__quote" data-reveal>"Transforming complex <span class="accent">data</span><br>into clear <span class="accent">decisions</span>."</h2>
+    <div class="manifesto__body">
+      <p data-reveal>I'm an AI and data specialist based in Melbourne. My work bridges statistical rigor and real-world application — from automation systems processing thousands of records to computer-vision models watching live traffic.</p>
+      <p data-reveal>Data is more than numbers: it's how organisations understand decisions, improve systems and move with confidence. Every build starts with the same question — what is this data really telling us?</p>
+      <p data-reveal>Beyond the datasets, you'll find me experimenting with new technologies and sharing what I learn — mentoring students, running workshops, and helping teams use data with confidence.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ ACT II · THREE PILLARS over THE BUILDER ══════════ -->
+  <section class="pillars" id="pillars">
+    <div class="pillars__pin">
+      <video class="bgvideo" id="builderVideo" muted loop playsinline preload="metadata"></video>
+      <div class="scrim"></div>
+
+      <div class="pillars__stage">
+        <p class="section-eyebrow mono">WHAT I BUILD WITH</p>
+        <div class="pillar" data-pillar="0">
+          <h2 class="pillar__title">Artificial<br>Intelligence</h2>
+          <p class="pillar__line">Systems that reason over messy, real-world data — and ship.</p>
+        </div>
+        <div class="pillar" data-pillar="1">
+          <h2 class="pillar__title">Machine<br>Learning</h2>
+          <p class="pillar__line">Models trained, tuned and measured until the numbers hold in production.</p>
+        </div>
+        <div class="pillar" data-pillar="2">
+          <h2 class="pillar__title">Computer<br>Vision</h2>
+          <p class="pillar__line">Teaching cameras to understand traffic, gestures and the physical world.</p>
+        </div>
+      </div>
+
+      <div class="pillars__index mono" id="pillarsIndex"><span id="pillarCurrent">AI</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ TOOLBOX ══════════ -->
+  <section class="toolbox" id="toolbox">
+    <p class="section-eyebrow mono" data-reveal>THE TOOLBOX</p>
+    <div class="toolbox__grid">
+      <div class="tool" data-reveal>
+        <h3 class="tool__name">Database &amp; Cloud</h3>
+        <p class="tool__list">SQL · MySQL · Oracle · Google Cloud Platform · Docker</p>
+      </div>
+      <div class="tool" data-reveal>
+        <h3 class="tool__name">Programming &amp; Analytics</h3>
+        <p class="tool__list">Python — pandas, NumPy, scikit-learn, PyTorch, OpenCV · C++ · C# · JavaScript · Vue.js</p>
+      </div>
+      <div class="tool" data-reveal>
+        <h3 class="tool__name">Visualisation</h3>
+        <p class="tool__list">Power BI · Tableau · SAS Viya · matplotlib</p>
+      </div>
+      <div class="tool" data-reveal>
+        <h3 class="tool__name">Statistics &amp; ML</h3>
+        <p class="tool__list">Regression · Hypothesis testing · YOLO · Random Forest · SVM · Neural networks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ EXPERIENCE ══════════ -->
+  <section class="xp" id="experience">
+    <p class="section-eyebrow mono" data-reveal>WHERE THE NUMBERS COME FROM</p>
+    <h2 class="xp__heading" data-reveal>Experience</h2>
+    <div class="xp__list">
+      <article class="xp__row" data-reveal>
+        <div class="xp__logo mono" data-logo="h1"><span>H1</span></div>
+        <div class="xp__when mono">OCT 2025 — NOW</div>
+        <div class="xp__what">
+          <h3 class="xp__role">Automation &amp; AI Specialist <span class="xp__org">/ H1 Healthcare</span></h3>
+          <p class="xp__impact">10+ automation workflows across Power Automate and Copilot Studio, lifting efficiency by 40%; invoice approvals cut from 2 days to under 2 hours; geolocation check-in app serving 450+ staff; onboarding admin workload down 30%.</p>
+        </div>
+      </article>
+      <article class="xp__row" data-reveal>
+        <div class="xp__logo mono" data-logo="vcaa"><span>VC</span></div>
+        <div class="xp__when mono">SEP — DEC 2025</div>
+        <div class="xp__what">
+          <h3 class="xp__role">Project Support Officer <span class="xp__org">/ Victorian Curriculum &amp; Assessment Authority</span></h3>
+          <p class="xp__impact">15,000+ student records processed and 5,000+ assessments validated with 20+ staff, cutting errors by 25%; 10,000+ data points reconciled to deliver statewide exam results for 50,000+ students on time at 100% compliance.</p>
+        </div>
+      </article>
+      <article class="xp__row" data-reveal>
+        <div class="xp__logo mono" data-logo="chameleon"><span>CH</span></div>
+        <div class="xp__when mono">JUL 2024 — JAN 2025</div>
+        <div class="xp__what">
+          <h3 class="xp__role">AI Engineer, Project Lead <span class="xp__org">/ Chameleon — Smarter World</span></h3>
+          <p class="xp__impact">Led a 12-member team building a YOLOv8 traffic system across 10,000+ images, lifting accuracy by 30%; managed 120+ hours of annotation and mentored 30+ peers to a 40% efficiency gain, delivering 100% on time — 1st place at Innofes 2024.</p>
+        </div>
+      </article>
+      <article class="xp__row" data-reveal>
+        <div class="xp__logo mono" data-logo="sas"><span>SAS</span></div>
+        <div class="xp__when mono">NOV — DEC 2024</div>
+        <div class="xp__what">
+          <h3 class="xp__role">Data Scientist <span class="xp__org">/ SAS Institute</span></h3>
+          <p class="xp__impact">Predictive models over 30+ banking datasets cut loan misclassification by 35%; insights presented to 100+ consultants and directors nationwide.</p>
+        </div>
+      </article>
+      <article class="xp__row" data-reveal>
+        <div class="xp__logo mono" data-logo="dksh"><span>DK</span></div>
+        <div class="xp__when mono">OCT — DEC 2023</div>
+        <div class="xp__what">
+          <h3 class="xp__role">Business Intelligence Analyst <span class="xp__org">/ DKSH</span></h3>
+          <p class="xp__impact">Automated Power BI dashboards and SQL workflows across 6 branches — reporting time down 50%, tracking accuracy up 25%, KPI discrepancies down 30%.</p>
+        </div>
+      </article>
+      <article class="xp__row" data-reveal>
+        <div class="xp__logo mono" data-logo="deakin"><span>DU</span></div>
+        <div class="xp__when mono">JUN — OCT 2024</div>
+        <div class="xp__what">
+          <h3 class="xp__role">Peer Mentor <span class="xp__org">/ Deakin University</span></h3>
+          <p class="xp__impact">Guided 30+ IT and data science students through programming workshops and career mentoring.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ ACT III · WORK over THE CLOSER ══════════ -->
+  <section class="work" id="work">
+    <video class="bgvideo bgvideo--fixedish" id="closerVideo" muted loop playsinline preload="metadata"></video>
+    <div class="scrim scrim--work"></div>
+
+    <div class="work__inner">
+      <div class="orbit-badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <path id="badgeCircle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/>
+          </defs>
+          <text class="orbit-badge__text">
+            <textPath href="#badgeCircle" textLength="238" lengthAdjust="spacingAndGlyphs">SELECTED WORK · KEVIN BUI · AI ENGINEER · </textPath>
+          </text>
+        </svg>
+        <span class="orbit-badge__arrow">↓</span>
+      </div>
+      <p class="section-eyebrow mono">SELECTED WORK</p>
+      <h2 class="work__heading">Three builds<br>that <span class="accent">earn the title.</span></h2>
+
+      <div class="cards">
+        <article class="card" tabindex="0">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <div class="card__tag mono">COMPUTER VISION · YOLO</div>
+              <h3 class="card__title">YOLO Traffic Intelligence</h3>
+              <p class="card__pitch">Award-winning real-time traffic congestion detection using computer vision.</p>
+              <div class="card__foot mono"><span>REAL-TIME</span><a class="card__arrow" href="https://github.com/Kevinbui16/Traffic-Jam-Object-Detection" target="_blank" rel="noopener" aria-label="View YOLO Traffic Intelligence on GitHub" tabindex="-1">→</a></div>
+            </div>
+            <div class="card__face card__back">
+              <div class="card__tag mono">THE DETAIL</div>
+              <p class="card__detail">Detects vehicles, then tracks density and speed across 10,000+ images to flag congestion patterns for smarter urban routing. Built leading a 12-member team — 1st place at Innofes 2024.</p>
+              <div class="card__foot mono"><span>PYTHON · YOLO · OPENCV</span><a class="card__arrow" href="https://github.com/Kevinbui16/Traffic-Jam-Object-Detection" target="_blank" rel="noopener" aria-label="View YOLO Traffic Intelligence on GitHub" tabindex="-1">→</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <div class="card__tag mono">DEEP LEARNING · RESNET50</div>
+              <h3 class="card__title">Vegetable Classification AI</h3>
+              <p class="card__pitch">Deep learning image classification achieving 98% accuracy using ResNet50.</p>
+              <div class="card__foot mono"><span>98% ACC</span><a class="card__arrow" href="https://github.com/Kevinbui16/Vegetable-Detection-Deep-Learning" target="_blank" rel="noopener" aria-label="View Vegetable Classification AI on GitHub" tabindex="-1">→</a></div>
+            </div>
+            <div class="card__face card__back">
+              <div class="card__tag mono">THE DETAIL</div>
+              <p class="card__detail">ResNet50 + CNN classifying vegetables from still images and live video feeds — 98% accuracy inside the first training epoch, built with smart agriculture in mind.</p>
+              <div class="card__foot mono"><span>PYTHON · PYTORCH · OPENCV</span><a class="card__arrow" href="https://github.com/Kevinbui16/Vegetable-Detection-Deep-Learning" target="_blank" rel="noopener" aria-label="View Vegetable Classification AI on GitHub" tabindex="-1">→</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <div class="card__tag mono">GESTURE · MEDIAPIPE + OPENCV</div>
+              <h3 class="card__title">HandDraw AI</h3>
+              <p class="card__pitch">Real-time gesture recognition and virtual drawing powered by MediaPipe and OpenCV.</p>
+              <div class="card__foot mono"><span>18+ GITHUB STARS</span><a class="card__arrow" href="https://github.com/Kevinbui16/HandDraw-AI" target="_blank" rel="noopener" aria-label="View HandDraw AI on GitHub" tabindex="-1">→</a></div>
+            </div>
+            <div class="card__face card__back">
+              <div class="card__tag mono">THE DETAIL</div>
+              <p class="card__detail">Hand-landmark detection turns any webcam into a drawing tool — sketch in the air, in real time. Open source with 18+ GitHub stars.</p>
+              <div class="card__foot mono"><span>PYTHON · MEDIAPIPE · OPENCV</span><a class="card__arrow" href="https://github.com/Kevinbui16/HandDraw-AI" target="_blank" rel="noopener" aria-label="View HandDraw AI on GitHub" tabindex="-1">→</a></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="section-eyebrow mono work__more-label" data-reveal>MORE BUILDS</p>
+      <div class="minis">
+        <a class="mini" data-reveal href="https://github.com/Kevinbui16/AdventureWorks-Data-Analysis" target="_blank" rel="noopener">
+          <h4 class="mini__title">AdventureWorks Dashboard</h4>
+          <p class="mini__pitch">Fiscal-year performance, profitability heatmaps and customer drilldowns for strategic decisions.</p>
+          <span class="mini__tools mono">POWER BI · SQL · DAX</span>
+        </a>
+        <a class="mini" data-reveal href="https://github.com/Kevinbui16/NutriSync" target="_blank" rel="noopener">
+          <h4 class="mini__title">NutriSync</h4>
+          <p class="mini__pitch">Wearable-driven supplement recommendations — People's Choice Award, VicHack 2024.</p>
+          <span class="mini__tools mono">PYTHON · FLASK · POWER BI</span>
+        </a>
+        <a class="mini" data-reveal href="https://github.com/Kevinbui16/Stroke-Detection-ML" target="_blank" rel="noopener">
+          <h4 class="mini__title">Stroke Detection ML</h4>
+          <p class="mini__pitch">Interpretable stroke-risk classification with engineered features and balanced data.</p>
+          <span class="mini__tools mono">PYTHON · SCIKIT-LEARN</span>
+        </a>
+        <a class="mini" data-reveal href="https://github.com/Kevinbui16/Electricity-Consumption-Prediction" target="_blank" rel="noopener">
+          <h4 class="mini__title">Electricity Forecasting</h4>
+          <p class="mini__pitch">Random Forest beat SVM, decision trees and neural nets on RMSE for urban energy planning.</p>
+          <span class="mini__tools mono">PYTHON · REGRESSION MODELS</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ AWARDS & CREDENTIALS ══════════ -->
+  <section class="awards" id="awards">
+    <p class="section-eyebrow mono" data-reveal>PROOF OF WORK</p>
+    <h2 class="awards__heading" data-reveal>Four national<br>AI <span class="accent">awards.</span></h2>
+    <div class="awards__list">
+      <div class="award" data-reveal>
+        <span class="award__year mono">2025</span>
+        <div>
+          <h3 class="award__name">AIMS Hackathon — Special Recognition <span class="award__scope mono">GLOBAL</span></h3>
+          <p class="award__for">AI system detecting modern-slavery risk in corporate transparency reports.</p>
+        </div>
+      </div>
+      <div class="award" data-reveal>
+        <span class="award__year mono">2024</span>
+        <div>
+          <h3 class="award__name">SAS Viya Challenge — National Champion</h3>
+          <p class="award__for">1st place nationally for a 95.93%-accuracy classification model on financial data.</p>
+        </div>
+      </div>
+      <div class="award" data-reveal>
+        <span class="award__year mono">2024</span>
+        <div>
+          <h3 class="award__name">Innofes — Best Capstone &amp; Best Pitch</h3>
+          <p class="award__for">Dual awards for the YOLOv8 traffic detection project and its presentation.</p>
+        </div>
+      </div>
+      <div class="award" data-reveal>
+        <span class="award__year mono">2024</span>
+        <div>
+          <h3 class="award__name">VicHack — People's Choice Award</h3>
+          <p class="award__for">NutriSync, an AI-powered personalised health recommendation app.</p>
+        </div>
+      </div>
+    </div>
+    <div class="creds-grid">
+      <div class="credcol" data-reveal>
+        <h3 class="credcol__title mono">EDUCATION</h3>
+        <div class="cred">
+          <p class="cred__name">Bachelor of Computer Science (Data Science) <span class="cred__meta mono">DEAKIN · 2025</span></p>
+          <p class="cred__detail">High Distinction, GPA 7.0/7.0 · International Excellence Scholarship (25% tuition) · SEBE Peer Mentor · Business Analytics, Software Engineering &amp; Vietnamese Student Clubs</p>
+        </div>
+        <div class="cred">
+          <p class="cred__name">Diploma of Information Technology <span class="cred__meta mono">DEAKIN · 2023</span></p>
+          <p class="cred__detail">High Distinction, GPA 7.0/7.0 · Faculty assistant for the Data Science Concepts unit (SIT112) · Student Committee — organised 80+ attendee events</p>
+        </div>
+      </div>
+      <div class="credcol" data-reveal>
+        <h3 class="credcol__title mono">CERTIFICATIONS</h3>
+        <div class="cred">
+          <p class="cred__name">Google Advanced Data Analytics <span class="cred__meta mono">GOOGLE · 2024</span></p>
+          <p class="cred__detail">Predictive modelling and data storytelling</p>
+        </div>
+        <div class="cred">
+          <p class="cred__name">Neural Networks &amp; Deep Learning <span class="cred__meta mono">DEEPLEARNING.AI · 2024</span></p>
+          <p class="cred__detail">CNNs and computer vision for real-world AI</p>
+        </div>
+        <div class="cred">
+          <p class="cred__name">SAS Programming 1: Essentials <span class="cred__meta mono">SAS · 2024</span></p>
+          <p class="cred__detail">SAS Base programming and statistical analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FINALE ══════════ -->
+  <section class="finale" id="contact">
+    <h2 class="finale__title" id="finaleTitle" aria-label="Let's build the future with AI.">
+      <span class="finale__row" data-line="LET'S BUILD"></span>
+      <span class="finale__row finale__row--accent" data-line="THE FUTURE"></span>
+      <span class="finale__row" data-line="WITH AI."></span>
+    </h2>
+    <p class="finale__lede" data-reveal>Ready to turn data challenges into opportunities? Whether it's analysis, visualisation or predictive modelling — let's talk.</p>
+    <div class="finale__cta">
+      <a class="btn btn--solid" id="btnEmail" href="#">Start a conversation</a>
+      <a class="btn btn--ghost" id="btnGithub" href="#" target="_blank" rel="noopener">See the code</a>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer__links mono">
+      <a id="linkLinkedin"  href="#" target="_blank" rel="noopener">LINKEDIN</a>
+      <a id="linkGithub"    href="#" target="_blank" rel="noopener">GITHUB</a>
+      <a id="linkFacebook"  href="#" target="_blank" rel="noopener">FACEBOOK</a>
+      <a id="linkEmail"     href="#">EMAIL</a>
+    </div>
+    <p class="footer__note mono">© 2026 KEVIN BUI</p>
+  </footer>
+
+</main>
+
+<script src="config.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
