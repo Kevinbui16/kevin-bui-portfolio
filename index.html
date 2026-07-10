@@ -48,10 +48,29 @@
 <!-- ══════════ NAV ══════════ -->
 <header class="nav">
   <a class="nav__mark" href="#top" aria-label="Kevin Bui — home">
-    <svg class="nav__mark-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M14 10 L14 54 M14 34 L38 10 M14 34 L40 54" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
-      <path d="M40 54 L50 54 L50 34 L40 34" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
-    </svg>
+    <span class="nav__mark-stage">
+      <span class="nav__mark-flip">
+        <svg class="nav__mark-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="navBlingGrad" gradientUnits="userSpaceOnUse" x1="-40" y1="-40" x2="0" y2="0">
+              <stop offset="0%"   stop-color="#F2EBDD"/>
+              <stop offset="42%"  stop-color="#F2EBDD"/>
+              <stop offset="50%"  stop-color="#ffffff"/>
+              <stop offset="58%"  stop-color="#F2EBDD"/>
+              <stop offset="100%" stop-color="#F2EBDD"/>
+              <animateTransform attributeName="gradientTransform" type="translate"
+                values="-90 -90; 0 0; 150 150; 150 150" keyTimes="0; 0.15; 0.55; 1"
+                dur="2.6s" repeatCount="indefinite"/>
+            </linearGradient>
+          </defs>
+          <path d="M14 10 L14 54 M14 34 L38 10 M14 34 L40 54" stroke="url(#navBlingGrad)" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M40 54 L50 54 L50 34 L40 34" stroke="url(#navBlingGrad)" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+        </svg>
+      </span>
+      <span class="nav__spark nav__spark--a">✦</span>
+      <span class="nav__spark nav__spark--b">✦</span>
+      <span class="nav__spark nav__spark--c">✦</span>
+    </span>
   </a>
   <nav class="nav__links">
     <a href="#about">About</a>

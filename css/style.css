@@ -129,7 +129,33 @@ a { color: inherit; text-decoration: none; }
   mix-blend-mode: difference;
 }
 .nav__mark { display: flex; align-items: center; }
-.nav__mark-icon { width: 26px; height: 26px; flex-shrink: 0; }
+.nav__mark-stage { position: relative; width: 26px; height: 26px; perspective: 300px; }
+.nav__mark-flip {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  transform-style: preserve-3d;
+  animation: navMarkFlip 2.6s linear infinite;
+}
+@keyframes navMarkFlip { to { transform: rotateY(360deg); } }
+.nav__mark-icon { width: 100%; height: 100%; flex-shrink: 0; }
+.nav__spark {
+  position: absolute;
+  font-size: 9px; line-height: 1;
+  color: var(--cream);
+  text-shadow: 0 0 5px rgba(242, 235, 221, 0.9);
+  opacity: 0;
+  animation: navMarkTwinkle 2.6s ease-in-out infinite;
+}
+.nav__spark--a { top: -3px; right: -6px; animation-delay: 0.15s; }
+.nav__spark--b {
+  bottom: -1px; left: -7px; animation-delay: 0.85s;
+  color: var(--emerald); text-shadow: 0 0 5px rgba(0, 208, 132, 0.9);
+}
+.nav__spark--c { top: 34%; right: -10px; animation-delay: 1.55s; }
+@keyframes navMarkTwinkle {
+  0%, 100% { opacity: 0; transform: scale(0.3) rotate(0deg); }
+  50%      { opacity: 1; transform: scale(1.2) rotate(90deg); }
+}
 .nav__links { display: flex; gap: clamp(18px, 3vw, 40px); }
 .nav__links a {
   font-family: var(--mono);
@@ -474,6 +500,8 @@ a { color: inherit; text-decoration: none; }
   .grain { animation: none; }
   .preloader__mark-flip { animation: none; }
   .preloader__spark { display: none; }
+  .nav__mark-flip { animation: none; }
+  .nav__spark { display: none; }
   .hero { height: 100vh; }
   .pillars { height: auto; }
   .pillars__pin { position: relative; height: auto; padding: 20vh 0; display: block; }
