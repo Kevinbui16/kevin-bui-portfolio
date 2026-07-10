@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kevin Bui — AI Engineer</title>
 <meta name="description" content="Kevin Bui — AI Engineer. Computer vision, machine learning and applied AI, built cinematic." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23060706'/%3E%3Cpath d='M14 10 L14 54 M14 34 L38 10 M14 34 L40 54' stroke='%23F2EBDD' stroke-width='7' stroke-linecap='square' stroke-linejoin='miter' fill='none'/%3E%3Cpath d='M40 54 L50 54 L50 34 L40 34' stroke='%23F2EBDD' stroke-width='7' stroke-linecap='square' stroke-linejoin='miter' fill='none'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +15,10 @@
 
 <!-- ══════════ PRELOADER ══════════ -->
 <div class="preloader" id="preloader" aria-hidden="true">
-  <div class="preloader__mark">KB</div>
+  <svg class="preloader__mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M14 10 L14 54 M14 34 L38 10 M14 34 L40 54" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M40 54 L50 54 L50 34 L40 34" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  </svg>
   <div class="preloader__status"><span id="preloaderLabel">CALIBRATING ORBIT</span><span id="preloaderPct">0%</span></div>
   <div class="preloader__bar"><div class="preloader__fill" id="preloaderFill"></div></div>
 </div>
@@ -24,7 +28,13 @@
 
 <!-- ══════════ NAV ══════════ -->
 <header class="nav">
-  <a class="nav__mark" href="#top">KB<span class="nav__dot">.</span></a>
+  <a class="nav__mark" href="#top">
+    <svg class="nav__mark-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M14 10 L14 54 M14 34 L38 10 M14 34 L40 54" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+      <path d="M40 54 L50 54 L50 34 L40 34" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+    </svg>
+    KB<span class="nav__dot">.</span>
+  </a>
   <nav class="nav__links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
@@ -136,7 +146,7 @@
         <div class="xp__logo mono" data-logo="h1"><span>H1</span></div>
         <div class="xp__when mono">OCT 2025 — NOW</div>
         <div class="xp__what">
-          <h3 class="xp__role">Automation &amp; AI Specialist <span class="xp__org">/ H1 Healthcare</span></h3>
+          <h3 class="xp__role">AI Engineer <span class="xp__org">/ H1 Healthcare</span></h3>
           <p class="xp__impact">10+ automation workflows across Power Automate and Copilot Studio, lifting efficiency by 40%; invoice approvals cut from 2 days to under 2 hours; geolocation check-in app serving 450+ staff; onboarding admin workload down 30%.</p>
         </div>
       </article>
